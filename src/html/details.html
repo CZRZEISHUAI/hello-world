@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>中国图书网</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="lib/swiper-4.5.0/dist/css/swiper.css">
-    <link rel="stylesheet" href="css/index.css">
-    <script src="lib/jquery-3.2.1.js"></script>
-    <script src="lib/jquery-cookie/jquery.cookie.js"></script>
-    <script src="lib/swiper-4.5.0/dist/js/swiper.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/goods.js"></script>
-    <script src="js/rank.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/details.css">
+    <link rel="stylesheet" href="../lib/jqzoomCase-master/css/base.css">
+    <!-- <script src="../js/jquery-1.7.min.js"></script> -->
+    <script src="../lib/jquery-3.2.1.js"></script>
+    <script src="../lib/jqzoomCase-master/js/jquery.jqzoom-2.2.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../lib/jquery-cookie/jquery.cookie.js"></script>
+    <script src="../js/details.js"></script>
+    <script src="../js/rank.js"></script>
 </head>
 
 <body>
@@ -25,9 +25,9 @@
         <div class="con clearfix">
             <!-- 登录、注册 -->
             <div class="loginArea">
-                <b>欢迎光临中国图书网&nbsp;请</b><a href="html/login.html" class="login">登录</a>
+                <b>欢迎光临中国图书网&nbsp;请</b><a href="login.html" class="login">登录</a>
                 <span>|</span>
-                <a href="html/register.html" class="regist">注册</a>
+                <a href="register.html" class="regist">注册</a>
             </div>
             <!-- 右侧工具栏 -->
             <div class="webTool">
@@ -54,7 +54,7 @@
                             <a href="#">我的积分</a>
                             <a href="#">收货地址</a>
                             <a href="#">我的书评</a>
-                            <a href="#" _blank">我的消息</a>
+                            <a href="#">我的消息</a>
                             <a href="#">积分换券</a>
                         </div>
                     </li>
@@ -73,7 +73,7 @@
                             style="right: 0; left: initial; width: 164px; padding-bottom: 7px; padding-left: 5px;">
                             <div class="erweimaWrap">
                                 <div class="erweima">
-                                    <img src="img/weiboerweima.jpg" alt="中图网微博">
+                                    <img src="../img/weiboerweima.jpg" alt="中图网微博">
 
                                 </div>
                                 <div class="text">
@@ -86,7 +86,7 @@
                             </div>
                             <div class="erweimaWrap">
                                 <div class="erweima">
-                                    <img src="img/weixinerweima.jpg" alt="中图网微信">
+                                    <img src="../img/weixinerweima.jpg" alt="中图网微信">
                                 </div>
                                 <div class="text">
                                     <b>扫一扫</b>
@@ -98,7 +98,7 @@
                             </div>
                             <div class="erweimaWrap">
                                 <div class="erweima">
-                                    <img src="img/phoneerweima.jpg" alt="手机中图">
+                                    <img src="../img/phoneerweima.jpg" alt="手机中图">
                                 </div>
                                 <div class="text">
                                     <b>手机中图</b>
@@ -121,8 +121,8 @@
             <div class="con clearfix">
                 <!--logo-->
                 <div class="logo">
-                    <a href="#" title="中国图书网">
-                        <img src="img/logo.png" alt="中国图书网">
+                    <a href="../index.html" title="中国图书网">
+                        <img src="../img/logo.png" alt="中国图书网">
                     </a>
                 </div>
                 <!--搜索区域-->
@@ -139,7 +139,7 @@
                                     <dt><span>搜索全部<b class="icon"></b></span></dt>
                                     <dd>
                                         <ul id="search_cates">
-                                            <li id="cate_0" class=<li id="cate_1">书名</li>
+                                            <li id="cate_0">书名</li>
                                             <li id="cate_3">作者</li>
                                             <li id="cate_4">出版社</li>
                                             <li id="cate_2">ISBN</li>
@@ -751,22 +751,22 @@
                                 </ul>
                                 <div class="all_category"><a href="#">全部商品分类&gt;&gt;</a></div>
                             </div>
-                            <div class="guanggao">
-                                <a href="#"><img src="img/img1.jpg" alt=""></a>
-                                <a href="#"><img src="img/img2.jpg" alt=""></a>
-                            </div>
+                            <!-- <div class="guanggao">
+                                <a href="#"><img src="../img/img1.jpg" alt=""></a>
+                                <a href="#"><img src="../img/img2.jpg" alt=""></a>
+                            </div> -->
                         </div>
                     </div>
                     <ul class="specil_category clearfix">
-                        <li class="cur"><a href="#" target="_parent">首页</a></li>
-                        <li><a href="html/list.html">淘淘书</a></li>
-                        <li><a href="html/list.html">畅销榜</a></li>
-                        <li class="fiveStar"><a href="html/list.html">五星书</a></li>
-                        <li><a href="html/list.html">新上架</a></li>
-                        <li><a href="html/list.html">9块9包邮</a></li>
-                        <li><a href="html/list.html">出版社浏览</a></li>
-                        <li><a href="html/list.html">闲情雅趣</a></li>
-                        <li><a href="html/list.html">批发</a></li>
+                        <li class="cur"><a href="../index.html">首页</a></li>
+                        <li><a href="list.html">淘淘书</a></li>
+                        <li><a href="#">畅销榜</a></li>
+                        <li class="fiveStar"><a href="#">五星书</a></li>
+                        <li><a href="#">新上架</a></li>
+                        <li><a href="#">9块9包邮</a></li>
+                        <li><a href="#">出版社浏览</a></li>
+                        <li><a href="#">闲情雅趣</a></li>
+                        <li><a href="#">批发</a></li>
                     </ul>
                 </div>
 
@@ -775,182 +775,83 @@
     </div>
     <!-- 页面主体 -->
     <div id="main" class="con">
-        <!-- 轮播图 -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="img/banner1.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/banner2.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/banner3.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/banner4.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/banner5.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/banner6.jpg" alt=""></div>
-                
-            </div>
-            <!-- 如果需要分页器 -->
-            <div class="swiper-pagination"></div>
-            
-            <!-- 如果需要导航按钮 -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-
-        <!-- 热书推荐 -->
-        <div class="hotbook con clearfix">
-            <div class="hot">
-                <div class="tab">
-                    <span>新品特惠</span>
-                    <span>本周精选</span>
-                    <span>新书速递</span>
-                    <span>读者热评</span>
-                </div>
-                <div class="hot_content">
-                    <div class="hot_content_Inner"></div>
-                    <div class="tabbook">
-                        <ul class="books clearfix"></ul>
-                    </div>
-                </div>
-            </div>
-            <!-- 排行榜 -->
-            <div class="hot_sale">
-                    <div class="hot_saleInner">
-                        <div class="hotTitle">
-                            <h2>图书畅销榜</h2>
-                            <a href="#">更多&gt;&gt;</a>
-                        </div>
-                        <ul class="rank">
-                            <!-- <li><i></i><p></p><div style="display:none;"><img src=""></div></li> -->
-                            
-                        </ul>
-                        <div class="moreHotSale">
-                            <a href="#">查看完整榜单&gt;&gt;</a> 
-                        </div>
-                    </div>
-            </div>
-        </div>
-        <!-- 广告区域 -->
-        <div class="hotSubject">
-            <div class="w1210 clearfix">
-                <a href="#" title="新品折上折">
-                    <img src="img/ad1.jpg" alt="新品折上折"></a>
-                <a href="#" title="民国的盛宴">
-                    <img src="img/ad2.jpg" alt="民国的盛宴"></a>
-                <a href="#" title="甲骨文系列">
-                    <img src="img/ad3.jpg" alt="甲骨文系列"></a>
-            </div>
-        </div>
-        <!-- 团购区 -->
-        <div class="tstWrap" id="groupBuy">
-            <div class="w1200">
-                <div class="tst">
-                    <div class="tstTit clearfix">
-                        <h2><a href="#">淘书团热销 &gt;</a><span>全场包邮，低至一折，每天上线</span></h2>
-                        <a href="#" class="more">查看更多商品&gt;&gt;</a>
-                    </div>
-                    <div class="tstCon">
-                        <div class="tstConInner clearfix">
-                            <div class="tstList">
-                                <ul class="tuangou">
-                                    
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 包邮区 -->
-        <div class="lowBaoYouFloor" id="lowPrice">
-            <div class="w1200 clearfix">
-                <!--今日超低价-->
-                <!--9块9包邮-->
-                <div class="baoyou">
-                    <div class="baoyouInner">
-                        <div class="baoyouTitle">
-                            <h2><a href="#">包邮区 &gt;</a><span>任选一本 整单包邮</span></h2>
-                            <div class="moreLink">
-                                <a href="#">查看更多&gt;&gt;</a>
-                            </div>
-                        </div>
-            
-                        <div class="baoCon">
-                            <ul class="booklist"></ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 文学区 -->
-        <div class="lowBaoYouFloor" id="lowPrice">
-            <div class="w1200 clearfix">
-                <div class="baoyou">
-                    <div class="baoyouInner">
-                        <div class="baoyouTitle" style="background:skyblue;">
-                            <h2><a href="#" style="color:snow">文学区 &gt;</a><span style="color:snow">文学璀璨 阳春白雪</span></h2>
-                            <div class="moreLink">
-                                <a href="#" style="color:snow;">查看更多&gt;&gt;</a>
-                            </div>
-                        </div>
-            
-                        <div class="baoCon">
-                            <ul class="booklist"></ul>
-                            <ul class="booklist"></ul>
-                            <ul class="booklist"></ul>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 儿童文学-->
-        <div class="lowBaoYouFloor" id="lowPrice">
-            <div class="w1200 clearfix">
-                <div class="baoyou">
-                    <div class="baoyouInner">
-                        <div class="baoyouTitle" style="background-color:orange">
-                            <h2><a href="#" style="color:snow">儿童文学 &gt;</a><span style="color:snow">童话镇</span></h2>
-                            <div class="moreLink">
-                                <a href="#" style="color:snow;">查看更多&gt;&gt;</a>
-                            </div>
-                        </div>
-                        <div class="baoCon">
-                            <ul class="booklist"></ul>
-                            <ul class="booklist"></ul>
-                            <ul class="booklist"></ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 中外名著 -->
-        <div class="lowBaoYouFloor" id="lowPrice">
-            <div class="w1200 clearfix">
-                <div class="baoyou">
-                    <div class="baoyouInner">
-                        <div class="baoyouTitle" style="background:#5eadb1;">
-                            <h2><a href="#" style="color:#fff;">中外名著 &gt;</a><span style="color:#fff;">开卷有益</span></h2>
-                            <div class="moreLink">
-                                <a href="#" style="color:snow;">查看更多&gt;&gt;</a>
-                            </div>
-                        </div>
-            
-                        <div class="baoCon">
-                            <ul class="booklist"></ul>
-                            <ul class="booklist"></ul>
-                            <ul class="booklist"></ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- 右侧导航栏 -->
         <div id="right-nav">
             <ul>
-                <li><a href="#"><img src="img/nav1.png" alt=""></a></li>
-                <li><a href="#"><img src="img/nav2.png" alt=""></a></li>
-                <li><a href="#"><img src="img/nav3.png" alt=""></a></li>
-                <li><a href="#"><img src="img/nav4.png" alt=""></a></li>
-                <li><a href="#"><img src="img/nav5.png" alt=""></a></li>
+                <li><a href="#"><img src="../img/nav1.png" alt=""></a></li>
+                <li><a href="#"><img src="../img/nav2.png" alt=""></a></li>
+                <li><a href="#"><img src="../img/nav3.png" alt=""></a></li>
+                <li><a href="#"><img src="../img/nav4.png" alt=""></a></li>
+                <li><a href="#"><img src="../img/nav5.png" alt=""></a></li>
             </ul>
+        </div>
+        <!-- 书籍详情 -->
+        <div class="book con clearfix">
+            <div class="bookDetaiWrap">
+                <!-- 书籍图片 -->
+                <div class="box">
+                </div>
+                <div class="bookInfo">
+                    <div class="bookHead">
+                        <!-- 书籍部分信息渲染 -->
+                    </div>
+                    <div class="priceWrap">
+                        
+                    </div>
+                    <div class="oparateButton clearfix">
+                        <span class="buyButton">加入购物车</span>
+                        <a href="#" class="collectBtn">收藏</a>
+                        <div class="freightPolicyWrap1">
+                            运费6元，满69元免运费
+                        </div>
+                    </div>
+                    <div class="buyTip">
+                        <span>温馨提示：</span>5折以下图书主要为出版社尾货，大部分为全新，个别图书品相8-9成新、切口
+                        <br>
+                        有划线标记、光盘等附件不全
+                    </div>
+
+                </div>
+            </div>
+            <div class="hot_sale">
+                <div class="hot_saleInner">
+                    <div class="hotTitle">
+                        <h2>相关作品</h2>
+                    </div>
+                    <ul class="rank"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="kindBanner">
+            <a href="#""><img src=" ../img/adbanner.jpg" alt="促销"></a>
+        </div>
+        <div class="con clearfix">
+            <div class="hot_sale" style="float:left;">
+                <div class="hot_saleInner">
+                    <div class="hotTitle">
+                        <h2>书友推荐</h2>
+                    </div>
+                    <ul class="rank"></ul>
+                </div>
+            </div>
+            <div class="lowBaoYouFloor" id="lowPrice">
+                <div class="clearfix">
+                    <div class="baoyou">
+                        <div class="baoyouInner">
+                            <div class="baoyouTitle" style="background:#f0f0f0;">
+                                <h2><a href="#" style="color:#999;">买过本书的人还买了</a></h2>
+                                <div class="moreLink">
+                                    <a href="#" style="color:snow;">查看更多&gt;&gt;</a>
+                                </div>
+                            </div>
+                
+                            <div class="baoCon">
+                                <ul class="booklist"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- 底部 -->
         <div class="footWrap">
@@ -961,8 +862,10 @@
                             <dt>新手上路</dt>
                             <dd><a href="#">购物流程演示</a></dd>
                             <dd><a href="#">注册用户 更改注册信息</a>
-                            </dd><dd>
-                            </dd><dd><a href="#">购物常见问题</a></dd>
+                            </dd>
+                            <dd>
+                            </dd>
+                            <dd><a href="#">购物常见问题</a></dd>
                             <dd><a href="#">关于特价书的常见问题</a></dd>
                         </dl>
                         <dl class="f2">
@@ -997,19 +900,19 @@
                         <dl class="weixin margin15">
                             <dt>微信公众号</dt>
                             <dd>
-                                <img src="img/weixinerweima.jpg" alt="中图网微信">
+                                <img src="../img/weixinerweima.jpg" alt="中图网微信">
                             </dd>
                         </dl>
                         <dl class="weixin">
                             <dt>中图网微博</dt>
                             <dd>
-                                <img src="img/weiboerweima.jpg" alt="中图网微博">
+                                <img src="../img/weiboerweima.jpg" alt="中图网微博">
                             </dd>
                         </dl>
                         <dl class="weixin">
                             <dt>手机中图</dt>
                             <dd>
-                                <img src="img/phoneerweima.jpg" alt="手机中图">
+                                <img src="../img/phoneerweima.jpg" alt="手机中图">
                             </dd>
                         </dl>
                     </div>
@@ -1017,48 +920,49 @@
             </div>
             <!--友情链接-->
             <div class="friend_link" id="friend_link">
-            <div class="w1200">
-                <div class="friend_link_inner">
-                    <dl class="clearfix">
-                        <dt>友情链接：</dt>
-                        <dd>
-                            <ul>
-                                <li><a href="#">荣宝斋</a></li>
-                                <li><a href="#">国家公务员考试网</a></li>
-                                <li><a href="#">孔夫子图书网</a></li>
-                                <li><a href="#">互动百科</a></li>
-                                <li><a href="#">互动吧</a></li>
-                                <li><a href="#">邮票</a></li>
-                                <li><a href="#">汉语大辞典</a></li>
-                                <li><a href="#">北京律师</a></li>
-                                <li><a href="#">事业单位招聘考试网</a></li>
-                                <li><a href="#">考研网</a></li>
-                            </ul>
-                        </dd>
-                    </dl>
-        
+                <div class="w1200">
+                    <div class="friend_link_inner">
+                        <dl class="clearfix">
+                            <dt>友情链接：</dt>
+                            <dd>
+                                <ul>
+                                    <li><a href="#">荣宝斋</a></li>
+                                    <li><a href="#">国家公务员考试网</a></li>
+                                    <li><a href="#">孔夫子图书网</a></li>
+                                    <li><a href="#">互动百科</a></li>
+                                    <li><a href="#">互动吧</a></li>
+                                    <li><a href="#">邮票</a></li>
+                                    <li><a href="#">汉语大辞典</a></li>
+                                    <li><a href="#">北京律师</a></li>
+                                    <li><a href="#">事业单位招聘考试网</a></li>
+                                    <li><a href="#">考研网</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+
+                    </div>
                 </div>
             </div>
-        </div>
             <div class="footBanner">
                 <div class="w1200">
-                    <img src="img/footbannr.jpg" alt="中国图书网">
+                    <img src="../img/footbannr.jpg" alt="中国图书网">
                 </div>
             </div>
             <div class="certifica">
                 <div class="width820 clearfix">
                     <div class="credit_certifica">
-                        <a href="#"  title="中国图书网诚信认证">
-                            <img src="img/chengxin.jpg" alt="诚信认证">
+                        <a href="#" title="中国图书网诚信认证">
+                            <img src="../img/chengxin.jpg" alt="诚信认证">
                         </a>
-                        <a href="#" title="中国图书网电子商务诚信单位认证"><img src="img/ectrust.gif" alt="电子商务诚信单位认证"></a>
+                        <a href="#" title="中国图书网电子商务诚信单位认证"><img src="../img/ectrust.gif" alt="电子商务诚信单位认证"></a>
                     </div>
-        
+
                     <div class="licence">
-                        <p><a href="#">京ICP备09013606号-3</a><a href="#">京信市监发[2002]122号</a><span>海淀公安分局备案编号：1101083394</span></p>
+                        <p><a href="#">京ICP备09013606号-3</a><a
+                                href="#">京信市监发[2002]122号</a><span>海淀公安分局备案编号：1101083394</span></p>
                         <p><a href="#">营业执照</a><a href="#">出版物经营许可证 京出发京批字第直110071</a></p>
                     </div>
-        
+
                 </div>
             </div>
         </div>

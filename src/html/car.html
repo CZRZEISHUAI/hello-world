@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>购物车</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/car.css">
+    <script src="../lib/jquery-3.2.1.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../lib/jquery-cookie/jquery.cookie.js"></script>
+    <script src="../js/car.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="head">
+        <div class="con clearfix">
+            <!-- 登录、注册 -->
+            <div class="loginArea">
+                <b>欢迎光临中国图书网&nbsp;请</b><a href="login.html" class="login">登录</a>
+                <span>|</span>
+                <a href="register.html" class="regist">注册</a>
+            </div>
+            <!-- 右侧工具栏 -->
+            <div class="webTool">
+                <ul class="clearfix">
+                    <li>
+                        <div class="dt">
+                            <a href="#">购物车<span class="qty">0</span>件</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dt">
+                            <a href="#">我的订单</a>
+                        </div>
+                    </li>
+                    <li class="drop">
+                        <div class="dt">
+                            <a href="#">我的账户</a>
+                            <b class="icon"></b>
+                        </div>
+                        <div class="dropLayer" style="width: 166px;">
+                            <a href="#">我的收藏夹</a>
+                            <a href="#">账户余额</a>
+                            <a href="#">我的优惠券</a>
+                            <a href="#">我的积分</a>
+                            <a href="#">收货地址</a>
+                            <a href="#">我的书评</a>
+                            <a href="#">我的消息</a>
+                            <a href="#">积分换券</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dt">
+                            <a href="#">帮助中心</a>
+                        </div>
+                    </li>
+
+                    <li class="drop">
+                        <div class="dt">
+                            <a href="#">手机中图</a>
+                            <b class="icon"></b>
+                        </div>
+                        <div class="dropLayer"
+                            style="right: 0; left: initial; width: 164px; padding-bottom: 7px; padding-left: 5px;">
+                            <div class="erweimaWrap">
+                                <div class="erweima">
+                                    <img src="../img/weiboerweima.jpg" alt="中图网微博">
+
+                                </div>
+                                <div class="text">
+                                    <b>扫一扫</b>
+                                    <span>
+                                        关注中图网<br>
+                                        官方微博
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="erweimaWrap">
+                                <div class="erweima">
+                                    <img src="../img/weixinerweima.jpg" alt="中图网微信">
+                                </div>
+                                <div class="text">
+                                    <b>扫一扫</b>
+                                    <span>
+                                        关注中图网<br>
+                                        微信公众号
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="erweimaWrap">
+                                <div class="erweima">
+                                    <img src="../img/phoneerweima.jpg" alt="手机中图">
+                                </div>
+                                <div class="text">
+                                    <b>手机中图</b>
+                                    <span>
+                                        进入中图网<br>
+                                        手机触屏版
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="loginHead">
+        <div class="logoBar">
+            <div class="logoBarInner">
+                <div class="logo fl">
+                    <h1>
+                        <a href="../index.html" title="中国图书网">
+                            <img src="../img/logo-login.jpg" alt="中国图书网">
+                        </a>
+                    </h1>
+                </div>
+                <div class="ad fr">
+                    <span class="zhengbang">正版好图书</span><span class="liujiu">全场满69包邮</span><span
+                        class="yizhe">特价书一折起</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 购物车 -->
+    <div class="car">
+        <div class="tabShoppCar clearfix">
+            <div class="carTab">
+                <ul>
+                    <li class="cur"><a href="#">购物车</a></li>
+                </ul>
+            </div>
+            <!-- 空购物车 -->
+            <div class="cartEmpty clearfix" style="display:none;">
+                <div class="emptyIcon">
+                </div>
+                <div class="emptyText">
+                    <span>购物车空空的哦~，去看看心仪的商品吧~</span>
+                    <a href="/">去购物</a>
+                </div>
+            </div>
+            <div class="shoppingCar">
+                <!--购物车头部-->
+                <div class="shoppingTitle">
+                    <ul>
+                        <li class="f1"><input type="checkbox" style="margin-left:10px;" class="allCheck"></span>全选</li>
+                        <li class="f2">图书名称</li>
+                        <li class="f3">定价（元）</li>
+                        <li class="f4">售价（元）</li>
+                        <li class="f5">数量操作</li>
+                        <li class="f6">小计（元）</li>
+                        <li class="f7">清空购物车</li>
+                    </ul>
+                </div>
+                <!--购物车内容-->
+                <div class="shoppingListWrap shoppingListContent">
+                    <div class="shoppingItem hasActivity">
+                        <div class="itemHead">
+                            <div class="slogan fl"><span>满减</span></div>
+                            <div class="activityInfor fl"><a href="#">3-5折每满99减30</a>
+                                <a href="#" class="fight">去凑单&gt;&gt;</a>
+                            </div>
+                            <div class="total">
+                                <div>
+                                总计：<span class="money">0</span>元
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!-- 要渲染的 -->
+                        <div class="listWrap clearfix">
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footerWrap">
+        <div class="footer">
+            <div class="footer_nav w_1000 clearfix">
+                <dl class="fl">
+                    <dt>新手上路</dt>
+                    <dd><a href="#">购物流程演示</a></dd>
+                    <dd><a href="#">注册用户 更改注册信息</a></dd>
+                    <dd><a href="#">购物常见问题</a></dd>
+                    <dd><a href="#">关于特价书的常见问题</a></dd>
+                </dl>
+                <dl class="f2">
+                    <dt>购买问题</dt>
+                    <dd><a href="#">订单跟踪</a></dd>
+                    <dd><a href="#">付款方式</a></dd>
+                    <dd>
+                        <a href="#">账户余额</a>&nbsp;&nbsp;&nbsp;
+                        <a href="#">申请提现</a>
+                    </dd>
+                    <dd><a href="#">配送方式及费用、范围</a></dd>
+                    <dd><a href="#">集团购买</a></dd>
+                </dl>
+                <dl class="f3">
+                    <dt>售后服务</dt>
+                    <dd><a href="#">退换货流程</a></dd>
+                    <dd><a href="#">投诉与建议</a></dd>
+                </dl>
+                <dl class="f4">
+                    <dt>特色服务</dt>
+                    <dd><a href="#">会员等级与积分</a></dd>
+                    <dd><a href="#">中图书馨卡</a></dd>
+                    <dd><a href="#">邮件订阅</a></dd>
+                    <dd><a href="#" style="color: #F00">邀请好友购买返68元礼包</a></dd>
+                </dl>
+                <dl class="f5">
+                    <dt>其他信息</dt>
+                    <dd><a href="#">本站简介</a></dd>
+                    <dd><a href="#">联系我们</a></dd>
+                    <dd><a href="#">招聘英才</a></dd>
+                    <dd><a href="#">网站联盟</a></dd>
+                    <dd><a href="#">友情链接</a></dd>
+                </dl>
+                <dl class="weixin">
+                    <dt>关注中图网微信号</dt>
+                    <dd><img src="../img/weixinerweima.jpg" alt="中国图书网官方微信"></dd>
+                </dl>
+            </div>
+            <div class="certifica w_1000">
+                <div class="credit_certifica">
+                    <a href="#" title="中国图书网诚信认证">
+                        <img src="../img/chengxin.jpg" alt="诚信认证">
+                    </a>
+                    <a href="#" title="中国图书网电子商务诚信单位认证">
+                        <img src="../img/ectrust.gif" alt="电子商务诚信单位认证">
+                    </a>
+                </div>
+                <div class="licence">
+                    <p>
+                        <a href="#">经营许可证编号：京ICP备09013606号-3</a>
+                        <a href="#">京信市监发[2002]122号</a><span>海淀公安分局备案编号：1101083394</span></p>
+                    <p>
+                        <a href="#">营业执照</a>
+                        <a href="#">出版物经营许可证</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
